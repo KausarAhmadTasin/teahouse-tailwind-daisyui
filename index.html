@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Taildind CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -14,10 +15,75 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Manrope Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awsome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Custome Styles -->
+    <style>
+      body {
+        font-family: "Manrope", sans-serif;
+        background-color: white;
+      }
+      button {
+        border: none;
+        outline: none;
+      }
+    </style>
+
     <title>Tea House</title>
   </head>
-  <body>
-    <header></header>
+  <body class="text-black">
+    <header
+      class="flex lg:flex-row flex-col w-[90%] lg:w-[85%] mx-auto gap-x-3 py-3 lg:py-10"
+    >
+      <div class="space-y-7 mb-7">
+        <h1
+          class="font-extrabold lg:leading-[6.25rem] text-black text-4xl lg:text-[5rem] max-w-[39.25rem]"
+        >
+          It's good tea time at The Tea House
+        </h1>
+        <p class="text-[#777] max-w-[25rem]">
+          Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+          Taste Buds.
+        </p>
+        <button
+          class="btn text-base lg:text-xl text-white bg-gradient-to-r from-[#FF8938] to-[#F00]"
+        >
+          Explore More <i class="fa-solid ml-2- fa-arrow-up rotate-45"></i>
+        </button>
+      </div>
+      <!-- Image -->
+      <div>
+        <div>
+          <img class="lg:w-auto w-[100%]" src="images/banner.png" alt="" />
+        </div>
+        <div
+          class="lg:relative m-auto flex gap-x-3 bg-white rounded-xl lg:p-7 p-4 lg:left-12 lg:bottom-36 drop-shadow-2xl max-w-[13rem] lg:max-w-[18rem]"
+        >
+          <i class="fa-solid text-[#FFF082] text-4xl lg:text-5xl fa-star"></i>
+          <div>
+            <p class="font-extrabold text-2xl lg:text-3xl">5.00</p>
+            <p class="font-semibold text-xs lg:text-base text-[#777]">
+              Trust Pilot Ratings
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
